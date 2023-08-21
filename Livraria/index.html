@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraria</title>
+</head>
+<body>
+  <h1>Livraria</h1>
+  <div id="output"></div>
+  <script src="script.js"></script>
+  <script>
+    const livraria = new Livraria();
+
+    // Adicionar alguns livros
+    livraria.adicionarLivro(new Livro("Dom Casmurro", "ISBN123", "Machado de Assis", 10));
+    livraria.adicionarLivro(new Livro("O Senhor dos Anéis", "ISBN456", "J.R.R. Tolkien", 5));
+    livraria.adicionarLivro(new Livro("Harry Potter e a Pedra Filosofal", "ISBN789", "J.K. Rowling", 7));
+
+    // Mostrar livros cadastrados
+    const outputDiv = document.getElementById("output");
+    const livrosCadastrados = livraria.mostrarLivros();
+    outputDiv.innerHTML = "<h2>Livros Cadastrados:</h2>" + livrosCadastrados;
+  </script>
+</body>
+</html>

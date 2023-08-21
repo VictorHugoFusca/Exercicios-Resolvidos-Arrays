@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gerenciamento de Produtos</title>
+</head>
+<body>
+  <h1>Sistema de Gerenciamento de Produtos</h1>
+
+  <label for="productName">Nome do Produto:</label>
+  <input type="text" id="productName">
+  <label for="quantity">Quantidade:</label>
+  <input type="number" id="quantity">
+  <button onclick="inserirProduto()">Inserir Produto</button>
+
+  <br>
+
+  <label for="removeProductName">Nome do Produto:</label>
+  <input type="text" id="removeProductName">
+  <button onclick="removerProduto()">Remover Produto</button>
+
+  <br>
+
+  <label for="queryProductName">Nome do Produto:</label>
+  <input type="text" id="queryProductName">
+  <button onclick="obterQuantidade()">Obter Quantidade</button>
+  <p id="quantityResult"></p>
+  
+  <script src="Produto.js"></script>
+  <script src="Produto2.js"></script>
+</body>
+</html>
